@@ -69,13 +69,15 @@ const [users, setUsers] = useState([
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1812728384947</th>
-      <td><img src="https://randomuser.me/api/portraits/thumb/men/75.jpg"></img></td>
-      <td>Steven Sheikn</td>
-      <td>steven@test.com</td>
-      <td>800-555-5555</td>
-    </tr>
+        {users.map((user) => (
+                <tr>
+                <th scope="row">{user.id.value}</th>
+                <td><img src="https://randomuser.me/api/portraits/thumb/men/75.jpg"></img></td>
+                <td>Steven Sheikn</td>
+                <td>steven@test.com</td>
+                <td>800-555-5555</td>
+              </tr>
+        ))}
   </tbody>
 </table>
     );
