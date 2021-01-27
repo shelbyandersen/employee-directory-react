@@ -7,7 +7,8 @@ const [users, setUsers] = useState([])
 
 useEffect(() => {
     axios.get("https://randomuser.me/api/?results=50").then(response => {
-        console.log(response.data)
+        console.log(response.data);
+        setUsers(response.data.results);
     })
 }, []);
 
