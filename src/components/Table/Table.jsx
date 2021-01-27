@@ -2,7 +2,7 @@ import React from 'react';
 
 const Table = () => {
     return (
-        <table className="table">
+        <table className="table table-success table-striped">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -14,21 +14,11 @@ const Table = () => {
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">1812728384947</th>
+      <td><img src="https://randomuser.me/api/portraits/thumb/men/75.jpg"></img></td>
+      <td>Steven Sheikn</td>
+      <td>steven@test.com</td>
+      <td>800-555-5555</td>
     </tr>
   </tbody>
 </table>
