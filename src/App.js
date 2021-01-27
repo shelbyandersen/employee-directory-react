@@ -1,8 +1,9 @@
+import { HashRouter as Route} from "react-router-dom";
 import Table from "./components/Table/Table"
 
 function App() {
   return (
-    <div className="container">
+    <Router basename="/">    <div className="container">
       <div className="row">
         <div className="col">
           <div className="App">
@@ -11,6 +12,8 @@ function App() {
         </div>
       </div>
     </div>
+    </Router>
+
   );
 }
 
